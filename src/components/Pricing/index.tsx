@@ -11,13 +11,16 @@ const Pricing = () => {
     <section id="pricing" className="relative z-10 py-16 md:py-20 lg:py-28">
       <div className="container">
         <SectionTitle
-          title="Simple and Affordable Pricing"
-          paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+          title="Our Programs"
+          paragraph="We offer diverse programs, including skill-based training, certification courses, and career-focused workshops to meet every learner's needs."
           center
           width="665px"
         />
 
-        <div className="w-full">
+        {/* **** course page starts from here **** */}
+        {/* commented by Mohd Sameer  */}
+
+        {/* <div className="w-full">
           <div className="mb-8 flex justify-center md:mb-12 lg:mb-16">
             <span
               onClick={() => setIsMonthly(true)}
@@ -55,48 +58,56 @@ const Pricing = () => {
               Yearly
             </span>
           </div>
-        </div>
+        </div> */}
 
         <div className="grid grid-cols-1 gap-x-8 gap-y-10 md:grid-cols-2 lg:grid-cols-3">
+          {/* course 1  */}
+          
           <PricingBox
-            packageName="Lite"
-            price={isMonthly ? "40" : "120"}
+            packageName="Technical Training"
+            price={""}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Hands-on learning to master industry-relevant tools and technologies."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="inactive" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="AI, ML &amp; Data Science" status="active" />
+            <OfferList text="Cloud Computing, DevOps &amp; Cybersecurity" status="active" />
+            <OfferList text="Full Stack Development (Java, Python, MERN)" status="active" />
+            <OfferList text="Mobile App Development (Android, iOS)" status="active" />
+            <OfferList text="UI/UX Design &amp; Product Development" status="active" />
+            {/* <OfferList text="Free Lifetime Updates" status="inactive" /> */}
           </PricingBox>
+          {/* course 2  */}
+          
           <PricingBox
-            packageName="Basic"
-            price={isMonthly ? "399" : "789"}
+            packageName="Professional Skills"
+            price={""}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Enhance communication, leadership, and teamwork abilities for career success."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="inactive" />
+            <OfferList text="Communication Skills" status="active" />
+            <OfferList text="Teamwork &amp; Collaboration" status="active" />
+            <OfferList text="Business Writing &amp; Email Etiquette" status="active" />
+            <OfferList text="Public Speaking &amp; Leadership" status="active" />
+            {/* <OfferList text="Lifetime Access" status="inactive" />
+            <OfferList text="Free Lifetime Updates" status="inactive" /> */}
           </PricingBox>
+          {/* course 3  */}
+          
+
           <PricingBox
-            packageName="Plus"
-            price={isMonthly ? "589" : "999"}
+            packageName="Career Readiness"
+            price={""}
             duration={isMonthly ? "mo" : "yr"}
-            subtitle="Lorem ipsum dolor sit amet adiscing elit Mauris egestas enim."
+            subtitle="Prepare for job interviews and workplace challenges with confidence."
           >
-            <OfferList text="All UI Components" status="active" />
-            <OfferList text="Use with Unlimited Projects" status="active" />
-            <OfferList text="Commercial Use" status="active" />
-            <OfferList text="Email Support" status="active" />
-            <OfferList text="Lifetime Access" status="active" />
-            <OfferList text="Free Lifetime Updates" status="active" />
+            <OfferList text="Resume Building &amp; LinkedIn Optimization" status="active" />
+            <OfferList text="Aptitude &amp; Logical Reasoning Practice" status="active" />
+            <OfferList text="Group Discussions &amp; Mock Interviews" status="active" />
+            <OfferList text="Career Goal Planning &amp; Tracking" status="active" />
+            {/* <OfferList text="Lifetime Access" status="inactive" />
+            <OfferList text="Free Lifetime Updates" status="inactive" /> */}
           </PricingBox>
+          
         </div>
       </div>
 

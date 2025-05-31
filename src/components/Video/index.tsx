@@ -14,7 +14,7 @@ export default function Video() {
         <div className="container">
           <SectionTitle
             title="We are ready to help"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            paragraph="We are dedicated to supporting your journey with expert guidance, tailored training, and career-focused solutions to help you achieve your goals."
             center
             mb="80px"
           />
